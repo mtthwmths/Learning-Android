@@ -1,1 +1,3 @@
 # Learning-Android
+
+This should be an app that is full of random pieces of android code with no real purpose other than to be my sandbox while I learn a bit...
