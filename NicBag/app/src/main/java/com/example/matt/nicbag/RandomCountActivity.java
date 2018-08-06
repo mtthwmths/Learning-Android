@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class RandomCount extends AppCompatActivity {
+public class RandomCountActivity extends AppCompatActivity {
 
     private static final String TOTAL_COUNT = "total_count";
 

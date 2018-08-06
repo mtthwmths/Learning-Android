@@ -8,8 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.matt.MESSAGE";
     public static final String TOTAL_COUNT = "total_count";
@@ -58,11 +56,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void randomMe(View view){
         //create the intent to start the second activity
-        Intent randomIntent = new Intent(this, RandomCount.class);
+        Intent randomIntent = new Intent(this, RandomCountActivity.class);
         TextView countTextView = (TextView) findViewById(R.id.numberBox);
         String countString = countTextView.getText().toString();
         Integer count = Integer.parseInt(countString);
         randomIntent.putExtra(TOTAL_COUNT, count);
         startActivity(randomIntent);
+    }
+
+    public void mapsOpen (View view) {
+        //open maps activity when map button is clicked
+        Intent mapIntent =  new Intent(this, MapsActivity.class);
+        startActivity(mapIntent);
     }
 }
