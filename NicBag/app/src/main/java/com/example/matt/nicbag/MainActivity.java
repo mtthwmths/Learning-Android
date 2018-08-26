@@ -54,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
         showCountTextView.setText(count.toString());
     }
 
+    /**
+     * reset count when the button is clicked
+     * @param view
+     */
+    public void countReset(View view){
+        //get the textView and then set count to zero
+        TextView showCountTextView = (TextView) findViewById(R.id.numberBox);
+        showCountTextView.setText("0");
+    }
+
     public void randomMe(View view){
         //create the intent to start the second activity
         Intent randomIntent = new Intent(this, RandomCountActivity.class);

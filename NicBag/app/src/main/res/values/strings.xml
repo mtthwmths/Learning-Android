@@ -11,4 +11,5 @@
     <string name="title_activity_maps">Check Outs</string>
     <string name="button_map_activity_open">Map</string>
     <string name="check_out">Check Out</string>
+    <string name="zero_button">Zero?</string>
 </resources>
